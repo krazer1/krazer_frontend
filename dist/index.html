@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+<!--<html lang="ru" class="show-event-popup">-->
 <html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Page title</title>
-  <link rel="stylesheet" href="styles/styles.css?ver=0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Lenni Art</title>
+  <link rel="stylesheet" href="styles/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
+
 
 <body class="body">
   <header class="page-header">
@@ -20,40 +21,451 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a href="#" class="page-header__nav-link">Мероприятия</a>
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
         <a href="#" class="page-header__nav-link">Блог</a>
         <a href="#" class="page-header__nav-link">О нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
-
-      <a href="#" class="btn page-header__user-btn">Войти</a>
+      <div class="page-header__btn-container">
+        <a href="#" class="btn page-header__user-btn">Войти</a>
+      </div>
     </div>
-
   </header>
+
+
   <main class="main">
     <div class="home">
       <header class="main-header home__main-header">
         <h1 class="main-header__title">Арт - пространство</h1>
         <picture class="main-header__picture">
-          <img src="assets/images/LENNI.png" class="main-header__img" />
-          <img sr>
+          <img src="assets/images/LENNI.svg" class="main-header__picture-img" />
         </picture>
         <p class="main-header__text">
-          для людей, горящих сердец и делом
-          место для настоящего
+          для людей, горящих сердцем и делом место для настоящего
         </p>
       </header>
-      <section class="offers home__offers"></section>
-      <section class="about home__about"></section>
+
+      <section class="offers home__offers">
+        <div class="offers__container">
+          <h3 class="offers__i-want">Я хочу:</h3>
+          <div class="offers__btns">
+            <a href="#" class="offers__btn btn btn--red">Провести мероприятия</a>
+            <a href="#" class="offers__btn btn">Стать арендатором</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!--<section class="about home__about">
+  <div class="about__container">
+    <h2 class="about__section-title title">О нас</h2>
+    <div class="about__block">
+      <h3 class="about__title">Проект «Millennials»</h3>
+      <p class="about__text">
+        Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и
+        желанием сделать мир лучше, проявить себя. У них есть талант и
+        стремление, у нас возможность помочь им воплотить их мечту в реальность.
+      </p>
+      <picture class="about__picture">
+        <img src="assets/images/about/about1.jpg" class="about__img" />
+      </picture>
+    </div>
+    <div class="about__block2">
+      <picture class="about__picture2">
+        <img src="assets/images/about/about2.jpg" class="about__img" />
+      </picture>
+      <h3 class="about__title about__title--w868 about__title--mt">
+        Мы предоставляем площади для вашего мероприятия
+      </h3>
+      <p class="about__text">
+        И оказываем помощь с организацией, если вам это нужно. Наша цель:
+        вовлечь в культурную жизнь города как можно больше людей, помочь молодым
+        ребятам сделать первые шаги к своей мечте и рассказать всем о том, что
+        их волнует.
+      </p>
+    </div>
+  </div>
+</section>-->
+
+      <section class="about home__about">
+        <div class="about__container">
+          <h2 class="about__section-title title">О нас</h2>
+          <div class="about__block">
+            <h3 class="about__title">Проект «Millennials»</h3>
+            <p class="about__text">
+              Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и
+              желанием сделать мир лучше, проявить себя. У них есть талант и
+              стремление, у нас возможность помочь им воплотить их мечту в реальность.
+            </p>
+          </div>
+          <div class="about__block2">
+            <picture class="about__picture">
+              <img src="assets/images/about/about1.jpg" class="about__img" />
+            </picture>
+            <picture class="about__picture2">
+              <img src="assets/images/about/about2.jpg" class="about__img" />
+            </picture>
+            <h3 class="about__title about__title--w868 about__title--2">
+              Мы предоставляем площади для вашего мероприятия
+            </h3>
+            <p class="about__text about__text--2">
+              И оказываем помощь с организацией, если вам это нужно. Наша цель:
+              вовлечь в культурную жизнь города как можно больше людей, помочь молодым
+              ребятам сделать первые шаги к своей мечте и рассказать всем о том, что
+              их волнует.
+            </p>
+          </div>
+          <div class="about__block3">
+            <picture class="about__picture3">
+              <img src="assets/images/about/about3.jpg" class="about__img2" />
+            </picture>
+            <div class="about__block3-wrapper">
+              <p class="about__text about__text--mb90">
+                Мы уже успешно организовали и провели более 100 проектов. Посмотрите,
+                как это было классно.
+              </p>
+              <a href="#" class="about__link link">
+                <span class="link__name">
+                  Смотреть
+                </span>
+                <svg class="link__icon" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section class="upcoming home__upcoming"></section>
-      <section class="listing hone__listing"></section>
-      <section class="contacts home__contacts"></section>
+      <!-- prettier-ignore -->
+      <section class="listing home__listing">
+        <h2 class="listing__title title">Блог</h2>
+
+        <div class="listing__article-list">
+          <!-- prettier-ignore -->
+          <article class="article-card listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/blog/theatre.jpg" alt="theatre photosession" class="article-card__img" />
+              </picture>
+            </a>
+
+            <div class="article-card__info">
+              <time datetime="2022-11-26T00:00" class="article-card__time">26.11.2022</time>
+
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
+
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было.</p>
+            </div>
+          </article>
+          <article class="article-card listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/blog/vr.jpg" alt="vr" class="article-card__img" />
+              </picture>
+            </a>
+
+            <div class="article-card__info">
+              <time datetime="2022-11-05T00:00" class="article-card__time">05.11.2022</time>
+
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Выставка VR в Томске</h4>
+
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+            </div>
+          </article>
+          <article class="article-card listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/blog/rockingRadio.jpg" alt="rocking radio" class="article-card__img" />
+              </picture>
+            </a>
+
+            <div class="article-card__info">
+              <time datetime="2022-11-01T00:00" class="article-card__time">01.11.2022</time>
+
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
+
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <a href="#" class="listing__link link">Смотреть все</a>
+      </section>
+
+
+      <section class="contacts home__contacts home__contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__items">
+              <div class="contacts-item">
+                <div class="contacts-item__img">
+                  <svg class="contacts-item__icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#location"></use>
+                  </svg>
+                </div>
+                <div class="contacts-item__content">
+                  <h4 class="contacts-item__title">Томск, Белая 8</h4>
+                  <p class="contacts-item__info">2 этаж</p>
+                  <p class="contacts-item__info">оф. 207-208</p>
+                </div>
+              </div>
+              <div class="contacts-item">
+                <div class="contacts-item__img">
+                  <svg class="contacts-item__icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#home"></use>
+                  </svg>
+                </div>
+                <div class="contacts-item__content">
+                  <h4 class="contacts-item__title">Отдел аренды</h4>
+                  <a href="tel: +74993500730" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="mailto: hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
+                </div>
+              </div>
+              <div class="contacts-item">
+                <div class="contacts-item__img">
+                  <svg class="contacts-item__icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#star"></use>
+                  </svg>
+                </div>
+                <div class="contacts-item__content">
+                  <h4 class="contacts-item__title">Отдел мероприятий</h4>
+                  <a href="tel: +74993500730" class="contacts-item__info">+7 499 350 0730</a>
+                  <a href="mailto: hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
+                </div>
+              </div>
+            </div>
+            <picture class="contacts__picture">
+              <img src="assets/images/map.jpg" class="contacts__img" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
 
       <div class="doit home__doit"></div>
     </div>
   </main>
 
-  <footer class="page-footer"></footer>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__separator"></div>
+
+      <div class="page-footer__nav-subcribe-container">
+        <nav class="page-footer__nav">
+          <a href="#" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="#" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="#" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="#" class="page-footer__nav-link">Наши проекты</a>
+          <a href="#" class="page-footer__nav-link">Контакты</a>
+        </nav>
+
+        <form class="page-footer__subscribe-form subscribe-form">
+          <label class="subscribe-form__field">
+            <span class="subscribe-form__field-label">Подпишись и будь в курсе происходящего</span>
+
+            <input class="subscribe-form__field-input" type="email" placeholder="Email" name="email" required />
+
+            <button class="subscribe-form__send-btn" type="submit" name="send">
+              Отправить
+            </button>
+          </label>
+
+          <label class="check">
+            <input class="check__input" type="checkbox" name="agree" required checked />
+
+            <span class="check__mark"></span>
+            <span class="check__label check__label--s">
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+
+      <div class="page-footer__vault">
+        <div class="page-footer__policy">
+          <span class="page-footer__millennials">© Millennials 2022</span>
+          <span class="page-footer__confident">Политика конфиденциальности</span>
+          <span class="page-footer__cookies">Cookies</span>
+        </div>
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__inst-link">
+            <svg class="page-footer__social-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#social_inst"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__inst-link">
+            <svg class="page-footer__social-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#social_inst"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__tagree">
+          <span class="page-footer__tagree-label">Создание и продвижение</span>
+          <svg class="page-footer__tagree-icon" width="56" height="17">
+            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="pp__container">
+        <h3 class="pp__title">
+          Заполните форму
+          <br />
+          и мы подберем площадку
+        </h3>
+
+        <form class="pp__form form">
+          <div class="form__list">
+            <label class="field form__field form__field--w50">
+              <h6 class="field__title">Формат мероприятия:</h6>
+              <div class="field__radio radio">
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="seminar" checked />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Мастер-класс/семинар</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="concert" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Концерт/выступление</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="show" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Выставка/показ</span>
+                </label>
+
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="other" />
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Другое</span>
+                </label>
+              </div>
+            </label>
+
+            <div class="form__group form__group--w50">
+              <label class="form__field field">
+                <h6 class="field__title">Планируемое количество посетителей:</h6>
+
+                <select class="field__select" name="amount">
+                  <option value="20">до 20 человек</option>
+                  <option value="100">от 20 до 100 человек</option>
+                  <option value="500">от 100 до 500 человек</option>
+                  <option value="1000">более 500 человек</option>
+                </select>
+              </label>
+
+              <label class="form__field field">
+                <h6 class="field__title">Дата проведения:</h6>
+
+                <div class="field__date-inputs">
+                  <input class="field__date-input" type="text" placeholder="ДД" name="day" required />
+                  <input class="field__date-input" type="text" placeholder="ММ" name="month" required />
+                  <input class="field__date-input field__date-input--110w" type="text" placeholder="ГГГГ" name="year" required />
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__section">
+            <h6 class="form__section-title">Контакные данные:</h6>
+            <div class="form__list">
+              <label class="field form__field form__field--w50">
+                <span class="field__label">Имя*</span>
+                <input class="field__input" type="text" placeholder="Имя" name="name" required />
+              </label>
+
+              <label class="field form__field form__field--w50">
+                <span class="field__label">Фамилия*</span>
+                <input class="field__input" type="text" placeholder="Фамилия" name="surname" required />
+              </label>
+
+              <label class="field form__field form__field--w50">
+                <span class="field__label">Телефон*</span>
+                <input class="field__input" type="tel" placeholder="+7 (___) ___ __ __" name="phone" required />
+              </label>
+
+              <label class="field form__field form__field--w50">
+                <span class="field__label">Email*</span>
+                <input class="field__input" type="email" placeholder="Email" name="email" required />
+              </label>
+            </div>
+          </div>
+
+          <label class="field form__field">
+            <span class="field__title">Есть пожелания? Напишите нам:</span>
+
+            <textarea class="field__textarea" name="wish"></textarea>
+          </label>
+
+          <div class="form__check-list">
+            <label class="form__cheak check">
+              <input class="check__input" type="checkbox" name="agree" required checked />
+
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                Я соглашаюсь с пользовательским соглашением и с политикой
+                использования персональных данных
+              </span>
+            </label>
+          </div>
+
+          <div class="form__btns">
+            <button type="submit" class="btn form__submit form__submit--w50">
+              Отправить
+            </button>
+
+            <button type="button" class="form__close">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>

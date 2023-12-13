@@ -1,0 +1,23 @@
+.listing {
+    .container();
+    display: flex;
+    flex-direction: column;
+
+    &__events-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -30px -120px;
+    }
+    &__card-event {
+        max-width: 405px;
+        width: calc(33.333% - 60px);
+        margin: 0 30px 120px;
+
+    }
+    &__link {
+        align-self: end;
+        padding: 15px 0px 15px 40px;
+        margin-top: 70px;
+    }
+}
