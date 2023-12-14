@@ -1,8 +1,8 @@
 {
-    "name": "course_front_2023",
-    "version": "1",
-    "description": "course frontend junior",
-    "author": "andreyka.chudinov@inbox.ru",
+    "name": "frontend_krazer1",
+    "version": "1.0.0",
+    "description": "course front junior",
+    "author": "isfedortsov@gmail.com",
     "devDependencies": {
       "autoprefixer": "^10.4.2",
       "browser-sync": "^2.27.7",
