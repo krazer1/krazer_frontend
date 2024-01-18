@@ -1,0 +1,23 @@
+.arrow {
+    padding: 0;
+    width: 92px;
+    height: 62px;
+    background-color: transparent;
+    border: none;
+    transition: color 0.2s;
+
+
+    &:hover {
+        @media(hover:hover) {
+            color: @red;
+        }
+    }
+
+    &--rotate180 {
+        transform: rotate(180deg);
+    }
+
+    &__icon {
+        cursor: pointer;
+    }
+}

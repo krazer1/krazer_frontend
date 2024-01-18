@@ -14,24 +14,33 @@
             <img
               src="assets/images/LENNI.svg"
               class="main-header__picture-img"
+              alt="logo"
             />
           </picture>
           <p class="main-header__text">
-            для людей, горящих сердцем и делом место для настоящего
+            для людей, горящих сердцем и делом<br> место для настоящего
           </p>
         </header>
-
+        <!-- prettier-ignore -->
         @@include('blocks/offers.html', {"class": "home__offers"})
 
         @@include('blocks/about.html', {"class": "home__about"})
 
-        <section class="upcoming home__upcoming"></section>
-        <!-- prettier-ignore -->
+        @@include('blocks/upcoming.html', {"class": "home__upcoming"})
+
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
         @@include('blocks/contacts.html', {"class": "home__contacts"})
 
-        <div class="doit home__doit"></div>
+        <div class="doit home__doit">
+          <div class="doit__container">
+            <p class="doit__text">
+              <span class="doit__text-part-1">Просто делайте,</span>
+              <span class="doit__text-part-2">что нравится,</span>
+              <span class="doit__text-part-3">а мы вам поможем</span>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
 

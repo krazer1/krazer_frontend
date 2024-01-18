@@ -1,20 +1,47 @@
 .main-header {
-    padding-bottom: 100px;
+    overflow: hidden;
 
     &__title,
     &__text {
-        padding-left: 40px;
-        padding-right: 40px;
+        //padding-left: 40px;
+        //padding-right: 40px;
         text-align: center;
         font-size: 45px;
         font-weight: 400;
         font-family: @font_lora;
         text-transform: uppercase;
-        //color: @black;
+
+        @media @bw1660 {
+            font-size: 35px;
+        }
+
+        @media @bw1020 {
+            font-size: 30px;
+        }
+
+        @media @bw768 {
+            font-size: 25px;
+        }
+
+        @media @bw600 {
+            font-size: 20px;
+        }
+
+        @media @bw500 {
+            font-size: 13px;
+        }
     }
 
     &__title {
         margin: 0 0 70px;
+
+        @media @bw1020 {
+            margin-bottom: 50px;
+        }
+
+        @media @bw500 {
+            margin-bottom: 30px;
+        }
     }
 
     &__text {
@@ -28,6 +55,26 @@
         margin-bottom: 70px;
         position: relative;
         width: 100%;
+
+        @media @bw1660 {
+            width: 113.2835%;
+            margin-left: -6.64175%;
+        }
+
+        @media @bw1020 {
+            margin-bottom: 50px;
+            margin-left: -13.47655%;
+            width: 126.9531%;
+        }
+
+        @media @bw650 {
+            margin-left: -18.28125%;
+            width: 136.5625%;
+        }
+
+        @media @bw500 {
+            margin-bottom: 30px;
+        }
     }
 
     &__picture::before {
